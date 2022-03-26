@@ -1,0 +1,211 @@
+.hh-forum-multi-wrapper,
+.hh-forum-submission {
+  @include inner-container;
+
+  button.metform-btn,
+  button.metform-btn:not(.toggle) {
+    @extend .nav-button;
+    text-align: left;
+    height: rem(55px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: rem(220px);
+    width: 100%;
+    max-width: rem(275px);
+    background-color: $cta-accent;
+    color: white;
+    padding: rem(10px) rem(30px);
+    border-radius: 0px;
+    margin-left: auto;
+    position: relative;
+    i {
+      position: absolute;
+      right: rem(30px);
+      // transform: tranlsate(-rem(10px));
+    }
+    span {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &:hover {
+      background-color: white;
+      border: 1px solid $cta-accent;
+      color: $cta-accent !important;
+      i {
+        color: $cta-accent !important;
+      }
+    }
+    @include bp(M) {
+      height: $button-height-small;
+      // min-width: 154px;
+    }
+  }
+  .eyebrow-light {
+    margin-bottom: rem(20px);
+    margin-right: 20px;
+  }
+  .mf-form-wrapper {
+    // max-width: 906px;
+    // margin-left: auto;
+  }
+  form {
+    .elementor-section .elementor-container {
+      //   max-width: 906px;
+      justify-content: space-between;
+      .elementor-col-50 {
+        width: 48%;
+      }
+    }
+  }
+  .elementor-col-33 {
+    width: 31%;
+    @include bp(S) {
+      width: 100%;
+    }
+  }
+  .elementor-1185 .elementor-element.elementor-element-8560476 {
+    width: 38%;
+  }
+  .mf-input-select {
+    height: rem(62.4px);
+  }
+  .mf-file-upload-container {
+    input {
+    }
+    label {
+    }
+  }
+  .mf-input-wrapper {
+    position: relative;
+    // height: rem(62.4px);
+    margin-bottom: rem(60px);
+
+    .mf-textarea,
+    .mf-input-select .mf_select__control {
+      padding: 0px;
+      background: white;
+      border: solid 1px #bebebe;
+    }
+    label:not(.mf-input-file-upload-label) {
+      z-index: 20;
+      position: absolute;
+      left: rem(36px);
+      min-width: 1px;
+      font-family: $lEX;
+      font-size: rem(14px);
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: rem(25px);
+      letter-spacing: -0.28px;
+      text-align: left;
+      color: #7b7b7b !important;
+      font-weight: 300;
+      background: white;
+      display: inline-block;
+      width: auto;
+      padding: 0px 10px;
+      top: -7px;
+      .mf-input-required-indicator {
+        font-weight: 300;
+        color: #7b7b7b !important;
+      }
+    }
+    input:not(.mf-input-file-upload) {
+      border: solid 1px #bebebe;
+      height: rem(62.4px);
+      background-color: white;
+
+      &:focus {
+        border: solid 1px #bebebe !important;
+        background-color: white !important;
+      }
+    }
+  }
+
+  // Select CSS
+  .mf-input.mf-input-select {
+		padding: 12px;
+		.mf_select__indicator{
+			border: none;
+			position: relative;
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			&:before{
+				content: "\f107";
+				// border-top: 1px solid
+			}
+
+		}
+  }
+}
+
+input:-internal-autofill-selected {
+  border: solid 1px #bebebe !important;
+  background-color: white !important;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 0px white inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: #333;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 0px white inset; /*your box-shadow*/
+  -webkit-text-fill-color: #333;
+}
+input:-webkit-autofill {
+  background-color: white !important;
+}
+
+.hh-forum-submission {
+  margin-top: rem(222px);
+  margin-bottom: rem(170px);
+  .headline {
+    margin-bottom: rem(180px);
+  }
+}
+
+.mf-multistep-container
+  .metform-form-content
+  .elementor-top-section:not(.active) {
+  // display: none;
+  overflow: hidden;
+}
+.hh-forum-multi-wrapper {
+  margin-top: rem(154px);
+  margin-bottom: 0px;
+
+  .headline {
+    margin-bottom: rem(48px);
+  }
+  .hh-form:last-child {
+    margin-top: rem(90px) !important;
+  }
+  .hh-mutli-step {
+    .metform-steps {
+      margin-top: 0px;
+      margin-bottom: rem(140px);
+      .metform-step-item {
+        height: rem(10px);
+        background-color: #bebebe !important;
+        width: 32%;
+        border-radius: 0px;
+        &.active {
+          background: $cta-accent !important;
+        }
+        &:nth-child(2) {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .metform-step-title {
+        display: none;
+      }
+    }
+    .step p {
+      text-align: center;
+    }
+  }
+}

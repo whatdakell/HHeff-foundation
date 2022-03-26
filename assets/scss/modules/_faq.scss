@@ -1,0 +1,30 @@
+.faq-section {
+  margin-top: rem(200px);
+  @include container;
+  .eyebrow,
+  .headline {
+    padding-left: 12px;
+  }
+  .headline {
+    margin-top: rem(30px);
+  }
+  .faq {
+    margin-top: rem(70px);
+    border-top: 1px solid #d4d4d4;
+    .elementor-toggle-item {
+      border-bottom: 1px solid #d4d4d4;
+      .elementor-tab-title {
+        @extend .faq-title;
+        padding-top: rem(70px);
+        padding-bottom: rem(70px);
+        border-bottom: none;
+        i {
+          color: $cta-accent;
+        }
+      }
+      .elementor-tab-content {
+        padding-bottom: rem(70px);
+      }
+    }
+  }
+}

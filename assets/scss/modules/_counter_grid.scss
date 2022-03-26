@@ -1,0 +1,33 @@
+#counter-grid {
+  @include inner-container;
+  padding-top: rem(80px);
+  padding-bottom: rem(80px);
+  .elementor-container {
+    // @include inner-container;
+  }
+  .body.elementor-widget {
+    margin-bottom: rem(80px);
+  }
+  .elementor-counter {
+    .elementor-counter-number-wrapper {
+      font-family: $libra;
+      font-size: rem(102px);
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: rem(81px);
+      letter-spacing: rem(0.51px);
+      text-align: left;
+      color: #050303;
+      .elementor-counter-number-prefix {
+        display: none;
+      }
+    }
+    .elementor-counter-title {
+      @extend .sub-headline;
+      color: #050303;
+      text-align: left;
+      margin-bottom: rem(26px);
+    }
+  }
+}
